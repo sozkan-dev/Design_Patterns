@@ -1,4 +1,5 @@
 import CreationalDesignPatterns.Builder.Product;
+import CreationalDesignPatterns.Singleton.Singleton;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,5 +8,12 @@ public class Main {
 
 
         System.out.println(product);
+
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+
+        System.out.println("Singleton 1: "+ singleton1);
+        System.out.println("Singleton 2: "+singleton2);
     }
+
 }
